@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Лап Лап</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +17,79 @@
         <a href="pricing.html" class="header_button">Оплата</a>
         <a href="contacts.html" class="header_button">Контакти</a>
     </header>
+
+    <section>
+        <div class="section_title">Щоб ми підібрали для вашого хвостика того самого вигульника — заповніть анкету ЛапЛап
+        </div>
+
+        <form id="Form">
+            <div class="question">Оберіть місто*</div>
+            <div class="custom-select" id="city" data-name="city" required>
+                <div class="selected">Обрати</div>
+                <div class="options">
+                    <div class="option" data-value="Житомир">Житомир</div>
+                    <div class="option" data-value="Рівне">Рівне</div>
+                </div>
+            </div>
+
+            <div class="question">Кличка вашого хвостика*</div>
+            <input type="text" id="pet_name" name="pet_name" required placeholder="Честер">
+
+            <div class="question">Порода*</div>
+            <input type="text" id="breed" name="breed" required placeholder="Коргі">
+
+            <div class="question">Вік*</div>
+            <input type="text" id="age" name="age" required placeholder="6 місяців">
+
+            <div class="question">Вага*</div>
+            <input type="text" id="weight" name="weight" required placeholder="2 кг">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Чи були якісь травми чи хвороби у вашого хвостика? Якщо так, то які?*</div>
+            <input type="text" id="traumas" name="traumas" required placeholder="">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Чого боїться ваш хвостик?</div>
+            <input type="text" id="fears" name="fears" placeholder="голосні звуки, котів">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Який саме догляд?</div>
+            <input type="text" id="care" name="care" placeholder="помити лапки, покормити">
+
+            <!-- можливо буде випадаючий список -->
+            <div class="question">Яка тривалість вигулу?</div> 
+            <input type="text" id="time_of_walk" name="time_of_walk" placeholder="">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Можливо, є важливі нюанси, які ми не спитали?</div>
+            <input type="text" id="fears" name="fears" placeholder="напишіть">
+
+            <div class="question">Ваше імʼя*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <div class="question">Ваш телефон з Telegram*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <div class="question">Нік у Telegram*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <div class="question">Адреса (вулиця, будинок, під’їзд, поверх, квартира, домофон)*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <!-- можливо буде випадаючий список -->
+            <div class="question">О котрій вам буде зручно прийняти дзвінок?*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <div class="question">Звідки ви дізнались про нас?*</div>
+            <input type="text" id="fears" name="fears" required placeholder="">
+
+            <button class="blue_button" style="width: 1220px; margin: 40px 140px; border: 0px;">Надіслати</button>
+        </form>
+    </section>
 
     <footer>
         <img src="images/logo.png" , style="width: 250px; height: 55px; grid-row: 2; grid-column: 2;">
@@ -37,7 +111,29 @@
         </div>
         <div style="grid-row:4; grid-column:2; font-size: 16px;">© ЛапЛап, 2025</div>
     </footer>
-    
+    <script>
+        const citySelect = document.getElementById("city");
+        const selected = citySelect.querySelector(".selected");
+        const options = citySelect.querySelectorAll(".option");
+
+        selected.addEventListener("click", () => {
+            citySelect.classList.toggle("open");
+        });
+
+        options.forEach(option => {
+            option.addEventListener("click", () => {
+                selected.textContent = option.textContent;  // показуємо обраний текст
+                selected.dataset.value = option.dataset.value; // зберігаємо value для форми
+                citySelect.classList.remove("open");
+            });
+        });
+
+        document.addEventListener("click", e => {
+            if (!citySelect.contains(e.target)) {
+                citySelect.classList.remove("open");
+            }
+        });
+    </script>
 </body>
 
 </html>

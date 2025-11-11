@@ -4,7 +4,48 @@
     padding: 0px;
 }
 
+/*Стилі для хедера*/
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.header_button {
+    /*кнопка в хедері, прозора, з чорним або синім*/
+    background-color: white;
+    color: black;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header_button.highlighted {
+    color: #0705f6;
+}
+
+.header_button:hover {
+    color: #0705f6;
+}
+
+/*Стилі для футера*/
+
+footer {
+    height: 280px;
+    background-color: rgba(190, 188, 188, 0.3);
+    display: grid;
+    grid-template-columns: 135px 335px 440px auto;
+    grid-template-rows: 40px auto auto auto;
+}
+
+/*Стилі для секцій*/
+
 .aligned_section {
+    /*рівняє секцію по центру*/
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -12,13 +53,24 @@
 }
 
 .row_spacing {
+    /*рівняє блоки в ряд, як у секції чому з ЛапЛап безпечно*/
     /* background-color: aquamarine; */
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
 
+.section_title {
+    /*Заголовок для секції, задає шрифт, розмір, ставить по центру екрану*/
+    font-size: 45px;
+    font-weight: 700;
+    width: 1110px;
+    margin: 50px auto;
+    text-align: center;
+}
+
 .why_safe_block {
+    /*сірий блок чому безпечно - тільки перевірені вигульники та інші*/
     background-color: #d9d9d9;
     opacity: 1;
     margin: 0px 42px;
@@ -44,48 +96,8 @@
     margin-top: 0px;
 }
 
-.section_title {
-    font-size: 45px;
-    font-weight: 700;
-    height: 150px;
-    display: flex;
-    align-items: center;
-}
-
-header {
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-
-.header_button {
-    background-color: white;
-    color: black;
-    margin-left: 60px;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.header_button.highlighted {
-    color: #0705f6;
-}
-
-.header_button:hover {
-    color: #0705f6;
-}
-
-footer {
-    height: 280px;
-    background-color: rgba(190, 188, 188, 0.3);
-    display: grid;
-    grid-template-columns: 135px 335px 440px auto;
-    grid-template-rows: 40px auto auto auto;
-}
-
 .blue_button {
+    /*Синя кнопка, наприклад написати нам*/
     width: 345px;
     height: 65px;
     background-color: #0705f6;
@@ -97,4 +109,64 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
+}
+
+/*Стилі для форми (опитування)*/
+
+.question {
+    /*для тексту, самого запитання - оберіть місто* та інші*/
+    font-size: 24px;
+    font-weight: 400;
+    margin: 15px 140px;
+}
+
+input {
+    width: 1200px;
+    padding: 10px;
+    margin: 0px 140px;
+    padding: 10px;
+    background: #d9d9d9;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+}
+
+/*Стилі для випадаючого списку у формі*/
+
+.custom-select {
+    width: 1220px;
+    margin: 0px 140px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.custom-select .selected {
+    padding: 10px;
+    background: #d9d9d9;
+}
+
+.custom-select .options {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #edebeb;
+    transition: max-height 0.3s ease;
+}
+
+.custom-select.open .options {
+    max-height: 100px;
+}
+
+.custom-select .option {
+    padding: 10px;
+}
+
+.custom-select .option:hover {
+    background: #d9d9d9;
 }
