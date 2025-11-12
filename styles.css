@@ -7,11 +7,21 @@
 /*Стилі для хедера*/
 
 header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
+    z-index: 1;
+}
+
+html {
+    scroll-padding-top: 110px;
+    /* padding-top: 110px; */
 }
 
 .header_button {
@@ -44,6 +54,13 @@ footer {
 
 /*Стилі для секцій*/
 
+.hero_title {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px;
+    width: 670px;
+}
+
 .aligned_section {
     /*рівняє секцію по центру*/
     justify-content: center;
@@ -55,9 +72,12 @@ footer {
 .row_spacing {
     /*рівняє блоки в ряд, як у секції чому з ЛапЛап безпечно*/
     /* background-color: aquamarine; */
-    justify-content: center;
     display: flex;
     flex-direction: row;
+}
+
+.row_spacing.aligned {
+    justify-content: center;
 }
 
 .section_title {
@@ -117,7 +137,7 @@ footer {
     /*для тексту, самого запитання - оберіть місто* та інші*/
     font-size: 24px;
     font-weight: 400;
-    margin: 15px 140px;
+    margin: 25px 0px 15px 140px;
 }
 
 input {
@@ -157,10 +177,6 @@ input {
     overflow: hidden;
     background-color: #edebeb;
     transition: max-height 0.3s ease;
-}
-
-.custom-select.open .options {
-    max-height: 100px;
 }
 
 .custom-select .option {
