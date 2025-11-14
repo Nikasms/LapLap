@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Лап Лап</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" , style="width: 250px; height: 55px; margin: 0px 190px 8px 0px;">
+        <a href="main.html" class="header_button">Головна</a>
+        <a href="about_us.html" class="header_button">Про нас</a>
+        <a href="registration.html" class="header_button highlighted">Послуга</a>
+        <a href="pricing.html" class="header_button">Оплата</a>
+        <a href="contacts.html" class="header_button">Контакти</a>
+    </header>
+
+    <section>
+        <div class="section_title">Щоб ми підібрали для вашого хвостика того самого вигульника — заповніть анкету ЛапЛап
+        </div>
+
+        <form id="Form">
+            <div class="question">Оберіть місто*</div>
+            <div class="custom-select" id="city" data-name="city" required>
+                <div class="selected">Обрати</div>
+                <div class="options">
+                    <div class="option" data-value="Житомир">Житомир</div>
+                    <div class="option" data-value="Рівне">Рівне</div>
+                </div>
+            </div>
+
+            <div class="question">Кличка вашого хвостика*</div>
+            <input type="text" id="pet_name" name="pet_name" required placeholder="Честер">
+
+            <div class="question">Порода*</div>
+            <input type="text" id="breed" name="breed" required placeholder="Коргі">
+
+            <div class="question">Вік*</div>
+            <input type="text" id="age" name="age" required placeholder="6 місяців">
+
+            <div class="question">Вага*</div>
+            <input type="text" id="weight" name="weight" required placeholder="2 кг">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Чи були якісь травми чи хвороби у вашого хвостика? Якщо так, то які?*</div>
+            <input type="text" id="traumas" name="traumas" required placeholder="">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Чого боїться ваш хвостик?</div>
+            <input type="text" id="fears" name="fears" placeholder="голосні звуки, котів">
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Який саме догляд?</div>
+            <input type="text" id="care" name="care" placeholder="помити лапки, покормити">
+
+            <!-- можливо буде випадаючий список -->
+            <div class="question">Яка тривалість вигулу?</div>
+            <!-- <input type="text" id="time_of_walk" name="time_of_walk" placeholder=""> -->
+
+            <div class="custom-select" id="time_of_walk" data-name="time_of_walk" required>
+                <div class="selected">Обрати</div>
+                <div class="options">
+                    <div class="option" data-value="45mins">45 хвилин</div>
+                    <div class="option" data-value="60mins">60 хвилин</div>
+                    <div class="option" data-value="90mins">90 хвилин</div>
+                    <div class="option" data-value="120mins">120 хвилин</div>
+                </div>
+            </div>
+
+            <!-- тут будуть інші питання -->
+
+            <div class="question">Можливо, є важливі нюанси, які ми не спитали?</div>
+            <input type="text" id="nuances" name="nuances" placeholder="напишіть">
+
+            <div class="question">Ваше імʼя*</div>
+            <input type="text" id="your_name" name="your_name" required placeholder="">
+
+            <div class="question">Ваш телефон з Telegram*</div>
+            <input type="text" id="phone_number" name="phone_number" required placeholder="">
+
+            <div class="question">Нік у Telegram*</div>
+            <input type="text" id="nickname" name="nickname" required placeholder="">
+
+            <div class="question">Адреса (вулиця, будинок, під’їзд, поверх, квартира, домофон)*</div>
+            <input type="text" id="address" name="address" required placeholder="">
+
+            <!-- можливо буде випадаючий список -->
+            <div class="question">О котрій вам буде зручно прийняти дзвінок?*</div>
+            <!-- <input type="text" id="time_of_call" name="time_of_call" required placeholder=""> -->
+
+            <div class="custom-select" id="time_of_call" data-name="time_of_call" required>
+                <div class="selected">Обрати</div>
+                <div class="options">
+                    <div class="option" data-value="no need">Нема необхідності в спілкуванні голосом</div>
+                    <div class="option" data-value="10-11">10:00-11:00</div>
+                    <div class="option" data-value="11-12">11:00-12:00</div>
+                    <div class="option" data-value="12-13">12:00-13:00</div>
+                    <div class="option" data-value="13-14">13:00-14:00</div>
+                    <div class="option" data-value="14-15">14:00-15:00</div>
+                    <div class="option" data-value="15-16">15:00-16:00</div>
+                    <div class="option" data-value="16-17">16:00-17:00</div>
+                    <div class="option" data-value="17-18">17:00-18:00</div>
+                    <div class="option" data-value="18-19">18:00-19:00</div>
+                    <div class="option" data-value="19-20">19:00-20:00</div>
+                </div>
+            </div>
+
+            <div class="question">Звідки ви дізнались про нас?*</div>
+            <input type="text" id="how_you_found_out" name="how_you_found_out" required placeholder="">
+
+            <button class="blue_button" style="width: 1220px; margin: 40px 140px; border: 0px;">Надіслати</button>
+        </form>
+    </section>
+
+    <script src="footer.js"></script>
+
+    <script>
+        const optionHeight = 40;
+        const lists = ["city", "time_of_walk", "time_of_call"];
+        lists.forEach(id => {
+            const select = document.getElementById(id);
+            const selected = select.querySelector(".selected");
+            const optionsContainer = select.querySelector(".options");
+            const options = select.querySelectorAll(".option");
+
+            const optionHeight = 40; // висота однієї опції в px
+
+            selected.addEventListener("click", () => {
+                select.classList.toggle("open");
+
+                if (select.classList.contains("open")) {
+                    // встановлюємо висоту options динамічно
+                    optionsContainer.style.maxHeight = `${options.length * (optionHeight + 1)}px`;
+                } else {
+                    // закриваємо select
+                    optionsContainer.style.maxHeight = null;
+                }
+            });
+
+            options.forEach(option => {
+                option.addEventListener("click", () => {
+                    selected.textContent = option.textContent;
+                    selected.dataset.value = option.dataset.value;
+                    select.classList.remove("open");
+                    optionsContainer.style.maxHeight = null; // прибираємо висоту після вибору
+                });
+            });
+
+            document.addEventListener("click", e => {
+                if (!select.contains(e.target)) {
+                    select.classList.remove("open");
+                    optionsContainer.style.maxHeight = null;
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
