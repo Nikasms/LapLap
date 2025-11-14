@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html {
+    scroll-padding-top: 110px;
+}
+
 /*Стилі для хедера*/
 
 header {
@@ -17,11 +21,6 @@ header {
     justify-content: center;
     background-color: white;
     z-index: 1;
-}
-
-html {
-    scroll-padding-top: 110px;
-    /* padding-top: 110px; */
 }
 
 .header_button {
@@ -48,18 +47,11 @@ footer {
     height: 280px;
     background-color: rgba(190, 188, 188, 0.3);
     display: grid;
-    grid-template-columns: 135px 335px 440px auto;
+    grid-template-columns: 140px 335px 440px auto;
     grid-template-rows: 40px auto auto auto;
 }
 
 /*Стилі для секцій*/
-
-.hero_title {
-    font-size: 45px;
-    font-weight: 700;
-    margin: 10px;
-    width: 670px;
-}
 
 .aligned_section {
     /*рівняє секцію по центру*/
@@ -137,13 +129,12 @@ footer {
     /*для тексту, самого запитання - оберіть місто* та інші*/
     font-size: 24px;
     font-weight: 400;
-    margin: 25px 0px 15px 140px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 input {
     width: 1200px;
-    padding: 10px;
-    margin: 0px 140px;
     padding: 10px;
     background: #d9d9d9;
     border: 1px solid #ccc;
@@ -153,11 +144,39 @@ input {
     outline: none;
 }
 
+/*стилі для питання з вибором однієї відповіді*/
+
+.option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    border: 4px solid #c2c2c2;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.option input {
+    display: none;
+}
+
+.option input:checked+.circle {
+    background-image: url("images/checkmark.png");
+}
+
 /*Стилі для випадаючого списку у формі*/
 
 .custom-select {
     width: 1220px;
-    margin: 0px 140px;
     border: 1px solid #ccc;
     border-radius: 7px;
     cursor: pointer;
@@ -172,17 +191,17 @@ input {
     background: #d9d9d9;
 }
 
-.custom-select .options {
+.custom-select .list_options {
     max-height: 0;
     overflow: hidden;
     background-color: #edebeb;
     transition: max-height 0.3s ease;
 }
 
-.custom-select .option {
+.custom-select .list_option {
     padding: 10px;
 }
 
-.custom-select .option:hover {
+.custom-select .list_option:hover {
     background: #d9d9d9;
 }
