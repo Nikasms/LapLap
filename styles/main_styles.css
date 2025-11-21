@@ -1,0 +1,27 @@
+.why_safe_block {
+    /*сірий блок чому безпечно - тільки перевірені вигульники та інші*/
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0px 42px;
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+}
+
+.why_safe_block_title {
+    width: 230px;
+    height: 50px;
+    padding: 25px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.why_safe_block_body {
+    width: 230px;
+    height: 130px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+

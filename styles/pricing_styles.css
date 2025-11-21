@@ -1,0 +1,42 @@
+.prices{
+    width: 250px;
+    height: 250px;
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0px 42px;
+    border-radius: 7px;
+}
+
+.prices_title{
+    font-size: 20px;
+    width: 206px;
+    height: 43px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.price_wrapper{
+    display: flex;
+    align-items: center; 
+    width: 210px;
+    height: 43px;
+    background-color: white;
+    margin-left: 22.5px;
+    margin-top: 26px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.price-container {
+    text-align: right;
+    display: flex;
+    align-items: center; 
+    /* Проміжок між елементами */
+    gap: 8px;  
+    width: fit-content; 
+    /* Додатково: Заборона перенесення тексту, якщо потрібно */
+    white-space: nowrap; 
+    margin-bottom: 14px;
+}
