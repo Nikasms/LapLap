@@ -2,6 +2,7 @@
     font-family: 'Geologica', sans-serif;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 html {
@@ -240,5 +241,114 @@ input {
 
 .custom-select .list_option:hover {
     background: #d9d9d9;
+}
+
+
+/*contacts.html*/
+.cities{
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0px 42px;
+    width: 380px;
+    height: 380px;
+    border-radius: 7px;
+}
+
+.cities_title{
+    width: 160px;
+    height: 50px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cities_number{
+    padding-bottom: 30px;
+    padding-left: 34px;
+    font-size: 28px;
+    color: #0705f6;
+    cursor: pointer;
+}
+
+.cities_timetable{
+padding-bottom: 10px;
+padding-left: 34px;
+width: 365px;
+height: 54px;
+font-size: 16px;
+}
+
+.blue_button_cities {
+    width: 289px;
+    height: 65px;
+    background-color: #0705f6;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.blue_button_cities:hover{
+    color: #5b5858;
+}
+
+.city_wrapper {
+    display: flex;
+    align-items: center; 
+    /* Невеликий відступ між лініями та текстом */
+    gap: 5px; 
+    /* Дозволяємо контейнеру бути лише шириною вмісту */
+    width: fit-content; 
+}
+
+
+/*price*/
+.prices{
+    width: 250px;
+    height: 250px;
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0px 42px;
+    border-radius: 7px;
+}
+
+.prices_title{
+    font-size: 20px;
+    width: 206px;
+    height: 43px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.price_wrapper{
+    display: flex;
+    align-items: center; 
+    width: 206px;
+    height: 43px;
+    background-color: white;
+    margin-left: 22.5px;
+    margin-top: 26px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.price-container {
+    text-align: right;
+    display: flex;
+    align-items: center; 
+    /* Проміжок між елементами */
+    gap: 8px;  
+    width: fit-content; 
+    /* Додатково: Заборона перенесення тексту, якщо потрібно */
+    white-space: nowrap; 
+    margin-bottom: 14px;
 }
 
