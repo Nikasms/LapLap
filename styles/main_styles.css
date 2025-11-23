@@ -1,3 +1,5 @@
+/* Чому з нами безпечно? */
+
 .why_safe_block {
     /*сірий блок чому безпечно - тільки перевірені вигульники та інші*/
     background-color: #d9d9d9;
@@ -25,3 +27,70 @@
     margin-top: 0px;
 }
 
+/* Питання та відповіді. */
+
+.q_and_a_block {
+    width: 975px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.question_block {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+.answer_block {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.answer_block_wrapper {
+    max-height: 0px;
+    transition: max-height 0.3s ease;
+    background-color: #edebeb;
+}
+
+/* Cиній плюс у питаннях та відповідях */
+
+.plus {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.plus::before,
+.plus::after {
+    content: "";
+    position: absolute;
+    background-color: #0705F6;
+}
+
+.plus::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    transform: translateY(-50%);
+}
+
+.plus::after {
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.q_and_a_block.open .plus {
+    transform: translateY(-50%) rotate(45deg);
+}
