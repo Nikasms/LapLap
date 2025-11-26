@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O/KeUGUcbkc=",
+  "dgSpecHash": "K2R4WkNiBko=",
   "success": true,
-  "projectFilePath": "D:\\LapLap\\LapLap.AppHost\\LapLap.AppHost.csproj",
+  "projectFilePath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\LapLap.AppHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ynest\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\aspire.dashboard.sdk.win-x64.9.5.0.nupkg.sha512",
     "C:\\Users\\ynest\\.nuget\\packages\\aspire.hosting\\9.5.0\\aspire.hosting.9.5.0.nupkg.sha512",

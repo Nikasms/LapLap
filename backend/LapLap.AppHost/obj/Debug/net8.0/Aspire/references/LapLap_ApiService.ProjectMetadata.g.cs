@@ -15,5 +15,5 @@ public class LapLap_ApiService : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the LapLap_ApiService project.
     /// </summary>
-    public string ProjectPath => """D:\LapLap\LapLap.ApiService\LapLap.ApiService.csproj""";
+    public string ProjectPath => """C:\Users\ynest\Source\Repos\LapLap\backend\LapLap.ApiService\LapLap.ApiService.csproj""";
 }

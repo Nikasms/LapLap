@@ -17,5 +17,5 @@ public class LapLap_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """D:\LapLap\LapLap.AppHost""";
+    public static string ProjectPath => """C:\Users\ynest\Source\Repos\LapLap\backend\LapLap.AppHost""";
 }

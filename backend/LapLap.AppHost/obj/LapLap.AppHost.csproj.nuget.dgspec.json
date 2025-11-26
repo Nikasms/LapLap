@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LapLap\\LapLap.AppHost\\LapLap.AppHost.csproj": {}
+    "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\LapLap.AppHost.csproj": {}
   },
   "projects": {
-    "D:\\LapLap\\LapLap.AppHost\\LapLap.AppHost.csproj": {
+    "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\LapLap.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LapLap\\LapLap.AppHost\\LapLap.AppHost.csproj",
+        "projectUniqueName": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\LapLap.AppHost.csproj",
         "projectName": "LapLap.AppHost",
-        "projectPath": "D:\\LapLap\\LapLap.AppHost\\LapLap.AppHost.csproj",
+        "projectPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\LapLap.AppHost.csproj",
         "packagesPath": "C:\\Users\\ynest\\.nuget\\packages\\",
-        "outputPath": "D:\\LapLap\\LapLap.AppHost\\obj\\",
+        "outputPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

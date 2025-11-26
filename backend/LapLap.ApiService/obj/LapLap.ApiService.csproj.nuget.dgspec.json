@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LapLap\\LapLap.ApiService\\LapLap.ApiService.csproj": {}
+    "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ApiService\\LapLap.ApiService.csproj": {}
   },
   "projects": {
-    "D:\\LapLap\\LapLap.ApiService\\LapLap.ApiService.csproj": {
+    "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ApiService\\LapLap.ApiService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LapLap\\LapLap.ApiService\\LapLap.ApiService.csproj",
+        "projectUniqueName": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ApiService\\LapLap.ApiService.csproj",
         "projectName": "LapLap.ApiService",
-        "projectPath": "D:\\LapLap\\LapLap.ApiService\\LapLap.ApiService.csproj",
+        "projectPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ApiService\\LapLap.ApiService.csproj",
         "packagesPath": "C:\\Users\\ynest\\.nuget\\packages\\",
-        "outputPath": "D:\\LapLap\\LapLap.ApiService\\obj\\",
+        "outputPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ApiService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj": {
-                "projectPath": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj"
+              "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj": {
+                "projectPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj"
               }
             }
           }
@@ -53,6 +53,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -76,14 +82,14 @@
         }
       }
     },
-    "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj": {
+    "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
+        "projectUniqueName": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
         "projectName": "LapLap.ServiceDefaults",
-        "projectPath": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
+        "projectPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
         "packagesPath": "C:\\Users\\ynest\\.nuget\\packages\\",
-        "outputPath": "D:\\LapLap\\LapLap.ServiceDefaults\\obj\\",
+        "outputPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

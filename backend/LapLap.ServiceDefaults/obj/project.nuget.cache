@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vV8SlPTzn8o=",
+  "dgSpecHash": "TU1J6KlNJ9A=",
   "success": true,
-  "projectFilePath": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
+  "projectFilePath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ynest\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",
     "C:\\Users\\ynest\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

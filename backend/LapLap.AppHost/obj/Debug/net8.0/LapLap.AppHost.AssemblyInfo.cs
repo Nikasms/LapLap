@@ -18,15 +18,15 @@ using System.Reflection;
     "xt\\")]
 [assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\ynest\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.5.0\\tools\\e" +
     "xt\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "D:\\LapLap\\LapLap.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "LapLap.AppHost.csproj")]
 [assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\ynest\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.5.0\\tools\\Aspire.Da" +
     "shboard.exe")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "D:\\LapLap\\LapLap.AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.AppHost\\obj\\")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b8880cf10e84b1d678f38d7a0cfa3ab18e45e93")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2224,11 +2224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
+      "projectUniqueName": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
       "projectName": "LapLap.ServiceDefaults",
-      "projectPath": "D:\\LapLap\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
+      "projectPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\LapLap.ServiceDefaults.csproj",
       "packagesPath": "C:\\Users\\ynest\\.nuget\\packages\\",
-      "outputPath": "D:\\LapLap\\LapLap.ServiceDefaults\\obj\\",
+      "outputPath": "C:\\Users\\ynest\\Source\\Repos\\LapLap\\backend\\LapLap.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -15,5 +15,5 @@ public class LapLap_Web : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the LapLap_Web project.
     /// </summary>
-    public string ProjectPath => """D:\LapLap\LapLap.Web\LapLap.Web.csproj""";
+    public string ProjectPath => """C:\Users\ynest\Source\Repos\LapLap\backend\LapLap.Web\LapLap.Web.csproj""";
 }
