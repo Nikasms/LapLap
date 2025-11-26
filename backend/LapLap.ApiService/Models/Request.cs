@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace LaplapAPIService.Models
+namespace LaplapApiService.Models
 {
     public class Request
     {

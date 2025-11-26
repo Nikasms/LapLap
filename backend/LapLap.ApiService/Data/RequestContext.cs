@@ -1,4 +1,4 @@
-using Laplap.APIService.Models;
+using Laplap.ApiService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Laplap.ApiService.Data
