@@ -1,10 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 
-namespace LaplapApiService.Models
+namespace Laplap.ApiService.Models
 {
     public class Request
     {
+        public int Id { get; set; }
+        public DateTime SubmissionDate { get; set; } = DateTime.UtcNow;
+
+
         [Required]
         public string City { get; set; }
         [Required]
@@ -53,6 +57,8 @@ namespace LaplapApiService.Models
         public string Time_Of_Call { get; set; }
         [Required]
         public string How_You_Found_Out { get; set; }
+
+
     }
 }
 

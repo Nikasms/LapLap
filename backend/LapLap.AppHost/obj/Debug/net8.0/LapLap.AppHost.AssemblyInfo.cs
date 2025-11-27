@@ -26,7 +26,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b8880cf10e84b1d678f38d7a0cfa3ab18e45e93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+082c3d23f0a9695d3e84c1a2d67e259452cfa84f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapLap.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

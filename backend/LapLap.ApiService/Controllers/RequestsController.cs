@@ -2,31 +2,32 @@ using Microsoft.AspNetCore.Mvc;
 using Laplap.ApiService.Data;
 using Laplap.ApiService.Models;
 
-namespace Laplap.ApiService.Controllers
+namespace LapLap.ApiService.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
 	public class RequestsController : ControllerBase
 	{
-		private readonly ApplicationContext _context;
+		private readonly RequestContext _context;
 
-		public RequestsController(ApplicationContext context)
+		public RequestsController(RequestContext context)
 		{
 			_context = context;
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> CreateRequest(ServiceRequest request)
+		public async Task<IActionResult> CreateRequest(Request request)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
 
 			request.SubmissionDate = DateTime.UtcNow;
 
-			_context.ServiceRequests.Add(request);
+			// ТУТ БУЛА ПОМИЛКА: Тепер ми звертаємось до Requests
+			_context.Requests.Add(request);
 			await _context.SaveChangesAsync();
 
-			return Ok(request); 
+			return Ok(request);
 		}
 	}
 }

@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LapLap.ApiService\LapLap.ApiService.csproj" />
-    <ProjectReference Include="..\LapLap.Web\LapLap.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
