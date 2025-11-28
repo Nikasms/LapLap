@@ -1,0 +1,99 @@
+* {
+    font-family: 'Geologica', sans-serif;
+    margin: 0px;
+}
+
+html {
+    scroll-padding-top: 110px;
+    overflow-x: hidden;
+}
+
+/*Стилі для хедера*/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.header_button {
+    /*кнопка в хедері, прозора, з чорним або синім*/
+    background-color: white;
+    color: black;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header_button.highlighted {
+    color: #0705f6;
+}
+
+.header_button:hover {
+    color: #0705f6;
+}
+
+/*Стилі для футера*/
+
+footer {
+    height: 280px;
+    background-color: #d9d9d9;
+    display: grid;
+    grid-template-columns: 140px 335px 440px auto;
+    grid-template-rows: 40px auto auto auto;
+}
+
+/*Стилі для секцій*/
+
+.aligned_section {
+    /*рівняє секцію по центру*/
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_spacing {
+    /*рівняє блоки в ряд, як у секції чому з ЛапЛап безпечно*/
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_title {
+    /*Заголовок для секції, задає шрифт, розмір, ставить по центру екрану*/
+    font-size: 45px;
+    font-weight: 700;
+    width: 1110px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.blue_button {
+    /*Синя кнопка, наприклад написати нам*/
+    width: 345px;
+    height: 65px;
+    background-color: #0705f6;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
