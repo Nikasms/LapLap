@@ -157,10 +157,80 @@ createDropdown("О котрій зручно прийняти дзвінок*", 
     "14:00-15:00", "15:00-16:00", "16:00-17:00", "17:00-18:00", "18:00-19:00", "19:00-20:00"
 ]);
 
-createTextInput("Звідки ви дізнались про нас? *", "how_you_found_out", "");
+createTextInput("Звідки ви дізнались про нас? *", "how_you_found_out", "");
+
+
+
+function getCheckedValues(name) {
+    const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+    return Array.from(checkboxes).map(cb => cb.value);
+}
+
+function getRadioValue(name) {
+    const radio = document.querySelector(`input[name="${name}"]:checked`);
+    return radio ? radio.value : "";
+}
 
 const submissionButton = document.createElement('button');
 submissionButton.className = "blue_button";
-submissionButton.style = "width: 1220px; margin: 40px 0px; border: 0px;";
-submissionButton.textContent = "Надіслати"
+submissionButton.style = "width: 1220px; margin: 40px 0px; border: 0px; cursor: pointer;";
+submissionButton.textContent = "Надіслати";
+
+
+submissionButton.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const requestData = {
+        City: document.getElementById("city").value,
+        Dog_Name: document.getElementById("dog_name").value,
+        Breed: document.getElementById("breed").value,
+        Age: document.getElementById("age").value,
+        Weight: document.getElementById("weight").value,
+        Gender: getRadioValue("gender"),
+        What_Is_There: getCheckedValues("what_is_there"),
+        Traumas: document.getElementById("traumas").value,
+        Pulls_The_Leach: getRadioValue("pulls_the_leach"),
+        Picks_Things_Up: getRadioValue("picks_things_up"),
+        Gives_Back: getRadioValue("gives_back"),
+        Fears: document.getElementById("fears").value,
+        Aggression: getCheckedValues("aggression"),
+        Contacts: getRadioValue("contacts"),
+        Care: getRadioValue("care"),
+        Care_Type: document.getElementById("care_type").value,
+        Walk_Time: document.getElementById("walk_time").value,
+        How_To_Get_To_You: getRadioValue("how_to_get_to_you"),
+        Nuances: document.getElementById("nuances").value,
+        Your_Name: document.getElementById("your_name").value,
+        Nickname: document.getElementById("nickname").value,
+        Address: document.getElementById("address").value,
+        Time_Of_Call: document.getElementById("time_of_call").value,
+        How_You_Found_Out: document.getElementById("how_you_found_out").value
+    };
+
+    console.log("Sending Data:", requestData);
+
+    try {
+        // Переконайтеся, що порт 55279 правильний!
+        const response = await fetch('https://localhost:55279/api/Requests', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestData)
+        });
+
+        if (response.ok) {
+            alert("Request is sent!");
+            // location.reload(); // Можна розкоментувати, щоб очистити форму
+        } else {
+            const errorText = await response.text();
+            console.error('Server Error:', errorText);
+            alert("Error while sending. Check console (F12)");
+        }
+    } catch (error) {
+        console.error('Network error:', error);
+        alert("Can't connect to the server.");
+    }
+});
+
 defaultForm.appendChild(submissionButton);
