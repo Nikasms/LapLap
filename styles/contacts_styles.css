@@ -1,5 +1,5 @@
 .cities{
-    background-color: #d9d9d9;
+    background-color: #edebeb;
     opacity: 1;
     margin: 0px 42px;
     width: 380px;
@@ -45,10 +45,6 @@ font-size: 16px;
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-}
-
-.blue_button_cities:hover{
-    color: #5b5858;
 }
 
 .city_wrapper {

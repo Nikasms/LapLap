@@ -41,7 +41,7 @@ function createDropdown(questionText, questionId, answers, form = defaultForm) {
     selectedBlock.addEventListener("click", () => {
         customSelectBlock.classList.toggle("open");
         listOptions.style.maxHeight = customSelectBlock.classList.contains("open")
-            ? `${answers.length * 41}px` : "0px";
+            ? answers.length * 41 + "px" : "0px";
     });
 
     customSelectBlock.appendChild(selectedBlock);
@@ -73,8 +73,6 @@ function createChoice(questionText, questionId, type, answers, form = defaultFor
     question.className = "question";
     question.textContent = questionText;
     form.appendChild(question);
-
-    const isMultiple = type === 1;
 
     answers.forEach(answer => {
         const optionLabel = document.createElement("label");
