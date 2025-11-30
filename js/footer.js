@@ -21,9 +21,10 @@ contacts_div.innerHTML = `
 footer.appendChild(contacts_div);
 
 const button = document.createElement('a');
-button.classList = ["blue_button"];
+button.className = "blue_button";
 button.style.cssText = "grid-row: 2; grid-column: 4;"
 button.innerHTML = "Написати нам";
+button.href = "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.Axes.html";
 footer.appendChild(button);
 
 const schedule_div = document.createElement('div');
