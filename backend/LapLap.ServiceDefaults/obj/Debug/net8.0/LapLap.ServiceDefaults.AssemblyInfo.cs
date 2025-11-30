@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapLap.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3809e39f38d8494f390ab2ea26df1f547e8b0ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c7c155cb2cea3ad5ba0f462d2f0bd761f316780")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapLap.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapLap.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

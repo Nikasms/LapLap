@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="requests.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="requests.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LapLap.ServiceDefaults\LapLap.ServiceDefaults.csproj" />
   </ItemGroup>
 

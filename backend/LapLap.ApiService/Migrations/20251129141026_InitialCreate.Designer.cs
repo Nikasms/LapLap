@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LapLap.ApiService.Migrations
 {
     [DbContext(typeof(RequestContext))]
-    [Migration("20251127133747_InitialCreate")]
+    [Migration("20251129141026_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

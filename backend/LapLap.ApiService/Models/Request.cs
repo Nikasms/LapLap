@@ -5,6 +5,7 @@ namespace Laplap.ApiService.Models
 {
     public class Request
     {
+        [Key]
         public int Id { get; set; }
         public DateTime SubmissionDate { get; set; } = DateTime.UtcNow;
 
