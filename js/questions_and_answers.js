@@ -4,7 +4,8 @@ function createQAndA(question, answer) {
     const qAndABlock = document.createElement('div');
     qAndABlock.className = "q_and_a_block";
 
-    const plusIcon = document.createElement('div');
+    const plusIcon = document.createElement('img');
+    plusIcon.src = "images/plus.svg";
     plusIcon.className = "plus";
 
     const questionBlock = document.createElement('div');
@@ -31,7 +32,7 @@ function createQAndA(question, answer) {
 
         qAndABlock.classList.toggle("open");
         answerBlockWrapper.style.maxHeight =
-            (qAndABlock.classList.contains("open")) ? (answerBlock.scrollHeight) + "px" : "0px"
+            (qAndABlock.classList.contains("open")) ? (answerBlock.scrollHeight) + "px" : "0px";
     });
 
 
@@ -94,6 +95,3 @@ createQAndA(
     "Як відбувається оплата?",
     "Оплата здійснюється на рахунок сервісу за погодженим тарифом. Доступні разові вигули або абонементи на вигідних умовах."
 );
-
-
-

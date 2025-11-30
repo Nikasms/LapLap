@@ -8,8 +8,6 @@ html {
     overflow-x: hidden;
 }
 
-/*Стилі для хедера*/
-
 header {
     position: sticky;
     top: 0;
@@ -24,7 +22,6 @@ header {
 }
 
 .header_button {
-    /*кнопка в хедері, прозора, з чорним або синім*/
     background-color: white;
     color: black;
     margin-left: 60px;
@@ -41,8 +38,6 @@ header {
     color: #0705f6;
 }
 
-/*Стилі для футера*/
-
 footer {
     height: 280px;
     background-color: #d9d9d9;
@@ -51,19 +46,13 @@ footer {
     grid-template-rows: 40px auto auto auto;
 }
 
-/*Стилі для секцій*/
-
 .aligned_section {
-    /*рівняє секцію по центру*/
-    /* justify-content: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .row_spacing {
-    /*рівняє блоки в ряд, як у секції чому з ЛапЛап безпечно*/
-    /* background-color: aquamarine; */
     display: flex;
     flex-direction: row;
 }
@@ -75,7 +64,6 @@ footer {
 }
 
 .section_title {
-    /*Заголовок для секції, задає шрифт, розмір, ставить по центру екрану*/
     font-size: 45px;
     font-weight: 700;
     width: 1110px;
@@ -84,7 +72,6 @@ footer {
 }
 
 .blue_button {
-    /*Синя кнопка, наприклад написати нам*/
     width: 345px;
     height: 65px;
     background-color: #0705f6;
