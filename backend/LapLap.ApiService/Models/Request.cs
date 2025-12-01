@@ -40,13 +40,13 @@ namespace Laplap.ApiService.Models
         public string Contacts { get; set; }
         [Required]
         public string Care { get; set; }
-        [Required]
+        
         public string Care_Type { get; set; }
-        [Required]
+        
         public string Walk_Time { get; set; }
         [Required]
         public string How_To_Get_To_You { get; set; }
-        [Required]
+       
         public string Nuances { get; set; }
         [Required]
         public string Your_Name { get; set; }

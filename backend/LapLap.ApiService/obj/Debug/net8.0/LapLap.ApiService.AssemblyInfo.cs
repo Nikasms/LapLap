@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LapLap.ApiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c7c155cb2cea3ad5ba0f462d2f0bd761f316780")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d34d64c81e415ab789e760b40761d41942b5fd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LapLap.ApiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LapLap.ApiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
