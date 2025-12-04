@@ -27,15 +27,20 @@ header {
     height: 110px;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: white;
     z-index: 1;
+}
+
+.header_logo {
+    width: 250px;
+    height: 55px;
+    margin: 0px 220px 8px 130px;
 }
 
 .header_button {
     background-color: white;
     color: black;
-    margin-left: 60px;
+    margin: 0px 30px;
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
@@ -55,6 +60,23 @@ footer {
     display: grid;
     grid-template-columns: 140px 335px 440px auto;
     grid-template-rows: 40px auto auto auto;
+}
+
+.hero_section {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 50px;
+    overflow: hidden;
+}
+
+.hero_section_image {
+    position: absolute;
+    right: -40px;
+}
+
+.hero_section_black_line {
+    background-color: black;
+    height: 4px;
 }
 
 .aligned_section {
@@ -80,6 +102,12 @@ footer {
     width: 1110px;
     margin: 50px auto;
     text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -40px;
 }
 
 .blue_button {

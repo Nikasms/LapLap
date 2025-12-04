@@ -1,8 +1,42 @@
+/* Як усе працює */
+
+.how_it_works_block {
+    margin: 0px 42px;
+}
+
+.how_it_works_image {
+    width: 315px;
+    height: 315px;
+    margin-bottom: 40px;
+}
+
+.how_it_works_blue_line {
+    height: 3px;
+    background-color: blue;
+}
+
+.how_it_works_title {
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.how_it_works_description {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.exclamation_mark_size {
+    width: 32px;
+    height: 77px;
+}
+
 /* Чому з ЛапЛап безпечно */
 
 .why_safe_block {
     background-color: #edebeb;
-    opacity: 1;
     margin: 0px 42px;
     width: 280px;
     height: 280px;
@@ -19,7 +53,7 @@
     font-weight: 700;
 }
 
-.why_safe_block_body {
+.why_safe_block_description {
     width: 230px;
     height: 130px;
     padding: 15px 25px;
