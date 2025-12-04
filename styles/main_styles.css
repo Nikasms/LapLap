@@ -1,0 +1,106 @@
+/* Як усе працює */
+
+.how_it_works_block {
+    margin: 0px 42px;
+}
+
+.how_it_works_image {
+    width: 315px;
+    height: 315px;
+    margin-bottom: 40px;
+}
+
+.how_it_works_blue_line {
+    height: 3px;
+    background-color: blue;
+}
+
+.how_it_works_title {
+    line-height: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.how_it_works_description {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.exclamation_mark_size {
+    width: 32px;
+    height: 77px;
+}
+
+/* Чому з ЛапЛап безпечно */
+
+.why_safe_block {
+    background-color: #edebeb;
+    margin: 0px 42px;
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+    position: relative;
+    z-index: -2;
+}
+
+.why_safe_block_title {
+    width: 230px;
+    height: 50px;
+    padding: 25px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.why_safe_block_description {
+    width: 230px;
+    height: 130px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+/* Питання та відповіді. */
+
+.q_and_a_block {
+    width: 975px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.question_block {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+    background-color: #edebeb;
+}
+
+.answer_block {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.answer_block_wrapper {
+    max-height: 0px;
+    transition: max-height 0.3s ease;
+    background-color: #f7f5f5;
+}
+
+/* Cиній плюс у питаннях та відповідях */
+
+.plus {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.q_and_a_block.open .plus {
+    transform: translateY(-50%) rotate(45deg);
+}

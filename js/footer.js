@@ -14,16 +14,16 @@ const contacts_div = document.createElement('div');
 contacts_div.style.cssText = "grid-row: 3; grid-column: 3; font-size: 16px;"
 contacts_div.innerHTML = `
     Контакти:<br>
-    Телефон: +38 (0XX) XXX-XX-XX<br>
-    Telegram: @laplap_dog<br>
-    Email: hello@laplap.com
+    Телефон: +38 098 842 11 24<br>
+    Email: pp11laplap@gmail.com
 `;
 footer.appendChild(contacts_div);
 
 const button = document.createElement('a');
-button.classList = ["blue_button"];
+button.className = "blue_button";
 button.style.cssText = "grid-row: 2; grid-column: 4;"
 button.innerHTML = "Написати нам";
+button.href = "https://mail.google.com/mail/?view=cm&fs=1&to=pp11laplap@gmail.com";
 footer.appendChild(button);
 
 const schedule_div = document.createElement('div');

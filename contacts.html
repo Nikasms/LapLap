@@ -3,13 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/general_styles.css">
+    <link rel="stylesheet" href="styles/contacts_styles.css">
     <title>Лап Лап</title>
 </head>
 
 <body>
+    <img src="images/blue_paws.png" class="paws" style="left: 570px; top: -150px; transform: rotate(0deg);">
+    <img src="images/blue_paws.png" class="paws" style="left: 700px; top: 400px; transform: rotate(0deg);">
+
     <header>
-        <img src="images/logo.png" , style="width: 250px; height: 55px; margin: 0px 190px 8px 0px;">
+        <img src="images/logo.png" class="header_logo">
         <a href="main.html" class="header_button">Головна</a>
         <a href="about_us.html" class="header_button">Про нас</a>
         <a href="registration.html" class="header_button">Послуга</a>
@@ -17,7 +22,48 @@
         <a href="contacts.html" class="header_button highlighted">Контакти</a>
     </header>
 
-    <script src="footer.js"></script>
+    <section class="aligned_section">
+        <div class="section_title">Контакти</div>
+        <div class="subtitle">Лапки, обійми і відповідальність</div>
+        <div class="row_spacing aligned">
+            <div class="city_block">
+                <div class="city_wrapper">
+                    <div class="city_blue_line"></div>
+                    <div class="city_title">Житомир</div>
+                    <div class="city_blue_line"></div>
+                </div>
+                <div class="city_number">+38 098 842 11 24</div>
+                <div class="city_time">
+                    <div class="city_time_description">09:00 - 21:00</div>
+                    графік роботи в телефонному режимі
+                </div>
+                <div class="city_time">
+                    <div class="city_time_description">08:00 - 22:00</div>
+                    графік роботи підтримки в Telegram
+                </div>
+                <a class="city_blue_button"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pp11laplap@gmail.com">Написати нам</a>
+            </div>
+            <div class="city_block">
+                <div class="city_wrapper">
+                    <div class="city_blue_line"></div>
+                    <div class="city_title">Рівне</div>
+                    <div class="city_blue_line"></div>
+                </div>
+                <div class="city_number">+38 098 842 11 24</div>
+                <div class="city_time">
+                    <div class="city_time_description">09:00 - 21:00</div>
+                    графік роботи в телефонному режимі
+                </div>
+                <div class="city_time">
+                    <div class="city_time_description">08:00 - 22:00</div>
+                    графік роботи підтримки в Telegram
+                </div>
+                <a class="city_blue_button"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pp11laplap@gmail.com">Написати нам</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/footer.js"></script>
 </body>
-
 </html>

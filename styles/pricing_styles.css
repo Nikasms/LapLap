@@ -1,0 +1,44 @@
+.prices {
+    width: 250px;
+    height: 250px;
+    background-color: #edebeb;
+    opacity: 1;
+    margin: 60px 46px 210px;
+    border-radius: 7px;
+}
+
+.prices_title {
+    font-size: 20px;
+    width: 206px;
+    height: 43px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.price_wrapper_blue_line {
+    background-color: #0705f6; width: 5px; height: 43px;
+}
+
+.price_wrapper {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 43px;
+    background-color: white;
+    margin-left: 22.5px;
+    margin-top: 26px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.price-container {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    white-space: nowrap;
+    margin-bottom: 14px;
+}

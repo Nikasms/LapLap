@@ -1,0 +1,90 @@
+.who_we_are_block {
+    margin: 60px 45px 460px;
+}
+
+.who_we_are_image {
+    width: 240px;
+    height: 240px;
+}
+
+.who_we_are_name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.who_we_are_name_description {
+    font-size: 17px;
+}
+
+.who_we_are_stars {
+    width: 106px;
+    height: 20px;
+}
+
+.who_we_are_description {
+    font-size: 14px;
+    width: 228px;
+    height: 21px;
+}
+
+.our_values_block {
+    margin: 0px 37px 140px;
+}
+
+.our_values_image {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 26px;
+}
+
+.our_values_blue_line {
+    width: 222px;
+    height: 3px;
+    margin-left: 60px;
+    background-color: blue;
+}
+
+.our_values_description {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 56px;
+    text-align: center;
+}
+
+.feedback_block {
+    width: 460px;
+    height: 222px;
+    background-color: #edebeb;
+    padding-top: 30px;
+    margin: 23px 100px;
+    position: relative;
+}
+
+.feedback_name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.feedback_stars {
+    width: auto;
+    height: 16px;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+
+.feedback_date {
+    font-size: 10px;
+    color: gray;
+    padding: 10px 0px;
+    margin-left: 30px;
+}
+
+.feedback_description {
+    font-size: 14px;
+    width: 397px;
+    height: 144px;
+    margin-left: 30px;
+}
